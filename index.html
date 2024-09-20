@@ -3,50 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Script/script.js"></script>
-    <link rel="stylesheet" href="Style/style.css">
     <title>Calculadora</title>
-    <link rel="website icon" href="Style/images.png">
+    <script src="Script/script.js"></script>
+    <link rel="stylesheet" href="./Style/style.css">
 </head>
-<body>  
+<body>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <input type="text" id="display" disabled>
+        <div class="botoes">
+            <button class="btn" onclick="porcentagem()">%</button>
+            <button class="btn duplo" onclick="limparDisplay()">C</button>
+            <button class="btn" onclick="apagar()">DEL</button>
+            <button class="btn" onclick="operador('/')">/</button>
 
-<div class="calculadora">
-    <h1>Calculadora</h1>
-    <input type="text" id="display" disabled>
-    <div class="botoes">
-        <button class="btn duplo" onclick="cleanDisplay()">C</button>
-        <button class="btn" onclick="delCaracter()">Del</button>
-        <button class="btn" onclick="operador('/')">/</button>
+            <button class="btn" onclick="addNumero('7')">7</button>
+            <button class="btn" onclick="addNumero('8')">8</button>
+            <button class="btn" onclick="addNumero('9')">9</button>
+            <button class="btn" onclick="operador('*')">x</button>
 
-        <button class="btn" onclick="addNumber(7)">7</button>
-        <button class="btn" onclick="addNumber(8)">8</button>
-        <button class="btn" onclick="addNumber(9)">9</button>
-        <button class="btn" onclick="operador('-')">-</button>
+            <button class="btn" onclick="addNumero('4')">4</button>
+            <button class="btn" onclick="addNumero('5')">5</button>
+            <button class="btn" onclick="addNumero('6')">6</button>
+            <button class="btn" onclick="operador('-')">-</button>
 
-        <button class="btn" onclick="addNumber(4)">4</button>
-        <button class="btn" onclick="addNumber(5)">5</button>
-        <button class="btn" onclick="addNumber(6)">6</button>
-        <button class="btn" onclick="operador('*')">x</button>
-        
-        <button class="btn" onclick="addNumber(1)">1</button>
-        <button class="btn" onclick="addNumber(2)">2</button>
-        <button class="btn" onclick="addNumber(3)">3</button>
-        <button class="btn" onclick="operador('+')">+</button>
-        
-        <button class="btn duplo" onclick="addNumber(0)">0</button>
-        <button class="btn">.</button>
-        <button class="btn">=</button>
-        
+            <button class="btn" onclick="addNumero('1')">1</button>
+            <button class="btn" onclick="addNumero('2')">2</button>
+            <button class="btn" onclick="addNumero('3')">3</button>
+            <button class="btn" onclick="operador('+')">+</button>
 
+            <button class="btn duplo" onclick="addNumero('0')">0</button>
+            <button class="btn" onclick="addNumero('.')">.</button>
+            <button class="btn" onclick="calcular()">=</button>
+            <button class="btn" onclick="raizQuadrada()">√</button>
+        </div>
     </div>
-
-</div>
-
+    <script src="./scripts/script.js"></script>
 </body>
-
-<header>
-    <h1>Ramon Müller</h1>
-    <p>2°Ano turma B</p>
-</header>
-
 </html>
